@@ -1,7 +1,4 @@
-.container {
-    width: 80%; /* instead of a fixed width like 800px */
-    padding: 20px; /* use relative padding/margin */
-}
+
 *{
     margin: 0;
     padding: 0;
