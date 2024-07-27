@@ -13,27 +13,47 @@
             </div>
 
             <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">CONTACT</a></li>
+               <ul>
+                    <li><a href="#" onclick="showSection('home')">HOME</a></li>
+                    <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+                    <li><a href="#" onclick="showSection('service')">SERVICE</a></li>
+                    <li><a href="#" onclick="showSection('design')">DESIGN</a></li>
+                    <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
                 </ul>
             </div>
-
             <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
+                <input class="srch" type="search" placeholder="Type to search">
+                <button class="btn">Search</button>
             </div>
-
         </div>
-        <div class="content">
+
+        <div id="home" class="content section">
             <h1>Nyambega <br><span>Kevin</span> <br>Mongare</h1>
             <p class="par">MMUST Student with a passion for programming, particularly in web development.
                 <br> I specialize in Python, JavaScript, and CSS.
                 <br> I'm always looking for new challenges and opportunities to learn and grow as a programmer.
-                </p>
+            </p>
+            <button class="cn"><a href="#">CONTACT ME</a></button>
+        </div>
+
+        <div id="about" class="content section" style="display:none;">
+            <h2>About Me</h2>
+            <p class="par">I am a passionate web developer with experience in creating dynamic and responsive web applications. I love to explore new technologies and improve my skills.</p>
+        </div>
+
+        <div id="service" class="content section" style="display:none;">
+            <h2>My Services</h2>
+            <p class="par">I offer a range of services including web design, development, and maintenance. My goal is to provide high-quality solutions that meet your needs.</p>
+        </div>
+
+        <div id="design" class="content section" style="display:none;">
+            <h2>Design</h2>
+            <p class="par">I create visually appealing and user-friendly designs that are tailored to your brand. My designs are responsive and optimized for all devices.</p>
+        </div>
+
+        <div id="contact" class="content section" style="display:none;">
+            <h2>Contact Me</h2>
+            <p class="par">Feel free to reach out to me for any inquiries or collaborations. I'm always open to discussing new projects and opportunities.</p>
 
                 <button class="cn"><a href="#">CONTACT ME</a></button>
 
@@ -60,6 +80,6 @@
                 </div>
         </div>
     </div>
-    <script src="sage.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
 </body>
 </html>
