@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage Design</title>
     <link rel="stylesheet" href="sage.css">
+    <style>
+        .contact-info {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body>
-
+ <body>
     <div class="main">
         <div class="navbar">
             <div class="icon">
                 <h2 class="logo">The_Sage</h2>
             </div>
-
             <div class="menu">
-               <ul>
-                    <li><a href="#" onclick="showSection('home')">HOME</a></li>
+                <ul>
+                    <li><a href="#">HOME</a></li>
                     <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
                     <li><a href="#" onclick="showSection('service')">SERVICE</a></li>
                     <li><a href="#" onclick="showSection('design')">DESIGN</a></li>
@@ -26,38 +32,15 @@
                 <button class="btn">Search</button>
             </div>
         </div>
-
         <div id="home" class="content section">
-            <h1>Nyambega <br><span>Kevin</span> <br>Mongare</h1>
-            <p class="par">MMUST Student with a passion for programming, particularly in web development.
-                <br> I specialize in Python, JavaScript, and CSS.
-                <br> I'm always looking for new challenges and opportunities to learn and grow as a programmer.
-            </p>
-            <button class="cn"><a href="#">CONTACT ME</a></button>
-        </div>
+            <h1>Nyambega <br><span>Kevin Nyambega </span> <br>Mongare</h1>
+            <p class="par">MMUST comrade, Bcs. Mechanical Technology.
+                I am a passionate web developer with experience<br> in creating dynamic and responsive web applications.<br>
+                I love to explore new technologies and improve my skills. with a passion for programming,<br>
+                particularly in web development.</p>
 
-        <div id="about" class="content section" style="display:none;">
-            <h2>About Me</h2>
-            <p class="par">I am a passionate web developer with experience in creating dynamic and responsive web applications. I love to explore new technologies and improve my skills.</p>
-        </div>
-
-        <div id="service" class="content section" style="display:none;">
-            <h2>My Services</h2>
-            <p class="par">I offer a range of services including web design, development, and maintenance. My goal is to provide high-quality solutions that meet your needs.</p>
-        </div>
-
-        <div id="design" class="content section" style="display:none;">
-            <h2>Design</h2>
-            <p class="par">I create visually appealing and user-friendly designs that are tailored to your brand. My designs are responsive and optimized for all devices.</p>
-        </div>
-
-        <div id="contact" class="content section" style="display:none;">
-            <h2>Contact Me</h2>
-            <p class="par">Feel free to reach out to me for any inquiries or collaborations. I'm always open to discussing new projects and opportunities.</p>
-
-                <button class="cn"><a href="#">CONTACT ME</a></button>
-
-                <div class="form">
+            <button class="cn" onclick="toggleContactInfo()">CONTACT ME</button>
+            <div class="form">
                     <h2>Login Here</h2>
                     <input type="email" name="email" placeholder="Enter Email Here">
                     <input type="password" name="" placeholder="Enter Password Here">
@@ -74,12 +57,145 @@
                         <a href="#"><ion-icon name="logo-google"></ion-icon></a>
                         <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
                     </div>
+            <div id="contact-info" class="contact-info">
+                <p>Phone: +254729774487</p>
+                <p>Email: kevin@example.com</p> <!-- Replace with your actual email -->
+            </div>
+        </div>
 
+        <div id="about" class="content section" style="display:none;">
+            <h2>About Me</h2>
+            <p class="par">My expertise lies in front-end development, particularly in using HTML, CSS,
+                and JavaScript to build user-friendly interfaces. I also have experience with back-end
+                technologies such as Node.js and Python.</p>
+        </div>
+
+        <div id="service" class="content section" style="display:none;">
+            <h2>My Services</h2>
+            <p class="par">I offer a range of services including web design,
+                development, and maintenance. My goal is to provide high-quality
+                solutions that meet your needs.</p>
+        </div>
+
+        <div id="design" class="content section" style="display:none;">
+            <h2>Design</h2>
+            <p class="par">I create visually appealing and user-friendly designs
+                that are tailored to your brand. My designs are responsive and optimized for all devices.</p>
+        </div>
+
+        <div id="contact" class="content section" style="display:none;">
+            <h2>Contact Me</h2>
+            <p class="par">Feel free to reach out to me for any inquiries or collaborations.
+                I'm always open to discussing new projects and opportunities.</p>
+            <p>Phone: +254729774487</p>
+            <p>Email: kevin@example.com</p> <!-- Replace with your actual email -->
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" placeholder="Enter Email Here">
+                <input type="password" placeholder="Enter Password Here">
+                <button class="btnn"><a href="#">Login</a></button>
+                <p class="link">Don't have an account?<br><a href="#">Sign up here</a></p>
+                <p class="liw">Log in with</p>
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
                 </div>
-                    </div>
-                </div>
+            </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
     <script src="sage.js"></script>
+ </body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link href="sage.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <section>
+      <div class="section">
+      <div class="section1">
+        <div class="img-slider">
+          <img src="r.jpg" style="width: 1400px; height: 700px;" alt="" class="img">
+          <img src="e.jpg" style="width: 1800px; height: 700px;" alt="" class="img">
+          <img src="w.jpg" style="width: 1800px; height: 700px;" alt="" class="img">
+          <img src="q.jpg" style="width: 1800px; height: 700px;" alt="" class="img">
+
+        </div>
+
+      </div>
+  </section>
+  <footer>
+    <div class="footer0">
+      <h1>Nyambega</h1>
+    </div>
+    <div class="footer1 ">
+      Connect with me<div class="social-media">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="product">
+        <div class="heading">Mechanical Engineer</div>
+        <div class="div">Software Engineer</div>
+        <div class="div">Trainer</div>
+        <div class="div">Nyambega</div>
+        <div class="div">Kevin</div>
+
+      </div>
+      <div class="services">
+        <div class="heading">Services</div>
+        <div class="div">Return</div>
+        <div class="div">Back</div>
+        <div class="div">Affiliate</div>
+        <div class="div">Others</div>
+      </div>
+      <div class="Company">
+        <div class="heading">Company</div>
+        <div class="div">Complaint</div>
+        <div class="div">Careers</div>
+        <div class="div">Affiliate</div>
+        <div class="div">Support</div>
+      </div>
+      <div class="Get Help">
+        <div class="heading">Get Help</div>
+        <div class="div">Help Center</div>
+        <div class="div">Privacy Policy</div>
+        <div class="div">Terms</div>
+        <div class="div">Login</div>
+      </div>
+    </div>
+    <div class="footer3">Programmer <h4>Nyambega</h4> Phone: +254729774487</div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="bizz.js"></script>
+
 </body>
+
 </html>
